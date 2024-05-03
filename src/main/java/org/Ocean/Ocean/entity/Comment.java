@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -22,7 +23,7 @@ public class Comment {
 
     @NotNull
     @Column(columnDefinition = "TIMESTAMP")
-    private LocalDate createdDate;
+    private LocalDateTime createdDate;
 
     @NotNull
     @ManyToOne

@@ -24,7 +24,7 @@ public class PostService {
     }
 
     public List<PostResponse> getAllPosts(){
-        List<Post> posts = postRepository.findAll(Sort.by(Sort.Direction.DESC, "createDate"));
+        List<Post> posts = postRepository.findAll(Sort.by(Sort.Direction.DESC, "createdDate"));
         return posts.stream().map(PostResponse::postToPostResponse).collect(Collectors.toList());
     }
 

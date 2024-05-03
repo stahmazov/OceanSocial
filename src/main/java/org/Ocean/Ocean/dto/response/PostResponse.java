@@ -1,7 +1,6 @@
 package org.Ocean.Ocean.dto.response;
 
 import org.Ocean.Ocean.entity.Post;
-import org.Ocean.Ocean.entity.User;
 
 import java.time.LocalDate;
 
